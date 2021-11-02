@@ -1,0 +1,50 @@
+//- index.pug
+doctype html
+html
+  head
+    title RV DANCE ACADEMY
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+          div#logo
+            img(src="/static/sh.jpg")
+            | RVA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    section#introsection 
+        div WELCOME TO RV DANCE ACADEMY 
+        div.small EAT SLEEP DANCE REPEAT
+
+    section#missionSection 
+        h2 OUR MISSION 
+        div.card
+          h3 LET'S DANCE TOGETHER 
+          div.card-box
+            div.card-img
+              img(src="/static/1.jpg")
+            div.card-content
+              p THIS IS THE BEST DANCE ACADEMY
+        div.card
+          h3 EXPRESS YOURSELF  
+          div.card-box
+            div.card-img
+              img(src="/static/1.jpg")
+            div.card-content
+              p WE WILL ALWAYS SUPPORT YOU
+    section#sponsorssection 
+        h2  OUR SPONSORS 
+          div#sponsors 
+            img(src="/static/logo.png" class="spImage")
+            img(src="/static/logo2.jpg" class="spImage")
+            img(src="/static/logo3.jpg" class="spImage")
+            img(src="/static/logo4.png" class="spImage")
+    footer#footer
+        | Copyright © 2021 RVAcademy.com | All Rights Reserved
+    
+    script
+      include ../static/index.js
